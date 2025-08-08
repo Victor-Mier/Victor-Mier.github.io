@@ -1,1 +1,224 @@
-Hello World
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Mier - Data Scientist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        body {
+            background-color: #111;
+            color: #f0f0f0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .header-content a {
+            padding: 12px 40px;
+            border-radius: 30px;
+            margin-top: 40px;
+        }
+
+        .header-content h1,
+        .header-content h2 {
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.1);
+            background-color: #0052cc;
+            transition: all 0.1s ease;
+        }
+
+        .tech-icons img {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            transition: transform 0.1s;
+        }
+
+        .tech-icons img:hover {
+            transform: scale(1.2);
+        }
+
+        section {
+            padding: 60px 0;
+            border-top: 1px solid #333;
+        }
+
+        @media (max-width: 768px) {
+            .header-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .header-content h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="text-center position-relative"  style="background: url('/images/header-bg.jpg') no-repeat center center/cover; padding: 100px 0;">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="header-content">
+                <h1>Victor Mier</h1>
+                <h2>Data Scientist</h2>
+                <p>Uncovering valuable and actionable insights from data</p>               
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/victor-mier/" target="_blank" class="mx-2">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://github.com/Victor-Mier" target="_blank" class="mx-2">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="mailto:victor.mier.s@gmail.com" class="mx-2">
+                    <i class="fas fa-envelope fa-2x"></i>
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <section id="about" class="text-center bg-dark py-5">
+        <div class="container text-center">
+            <h2>About</h2>
+            <p>After 16 years of experience in the manufacturing industry, I decided to give my career a fresh twist toward data science. In every decision we make in the industry, 
+                it’s fundamental to understand the data we have and uncover what it's telling us—even when the data isn’t very clear or requires extensive processing before it can 
+                be analyzed.
+            </p>
+            <p>I'm a technology enthusiast and a lifelong learner. I find this particular moment in human history incredibly exciting and full of opportunities, 
+                with technology advancing every day to make our lives easier and more productive.
+            </p>
+        </div>
+    </section>
+
+    <section id="video-cv" class="text-center py-5">
+        <div class="container">
+            <h2>My Video CV</h2>
+
+            <div class="video-container mt-4">
+                <iframe width="560" height="315" src="https://www.youtube.com/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="technologies" class="py-5 bg-dark text-center">
+        <div class="container">
+            <h2>Languages and tools</h2>
+            <div class="tech-icons mb-4">
+                <figure>
+                <img src="https://skillicons.dev/icons?i=py" alt="Python" title="Python">
+                <img src="https://skillicons.dev/icons?i=sklearn" alt="scikit-learn" title="Scikit-learn">
+                <img src="https://skillicons.dev/icons?i=pytorch" alt="PyTorch" title="PyTorch">
+                <img src="https://skillicons.dev/icons?i=tensorflow" alt="TensorFlow" title="TensorFlow">
+                <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" title="MySQL">
+                <img src="https://skillicons.dev/icons?i=git" alt="Git" title="Git">
+                </figure>
+            </div>
+        </div>
+    </section>
+    
+    <!--Estilo CSS adicional-->
+    <style>
+        .custom-btn {
+            background-color: #0052cc;
+            border: none;
+            color: #fff;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.1s ease-in-out;
+            margin-top: 20px;
+        }
+    
+        .custom-btn:hover {
+            transform: scale(1.1);
+            background-color: #002d72;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+
+    <section id="projects" class="py-5 text-center">
+        <div class="container">
+            <h2>Projects</h2>
+            <p>Here are some of my recent projects:</p>
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>Curstomer Churn Prediction Model</h3>
+                        </div>
+                        <a href="projects/customer_churn_prediction_model.pdf" target="_blank">
+                            <img src="./images/churn_pred_project.png" class="img-fluid project-img" alt="Project 1">
+                        </a>
+                        <p>This project includes data visualization with mathplotlib, seaborn and plotly. 
+                            An Exploratory Data Analysis (EDA) and ML models training and testing for the classification task.
+                            The best model (LGBM) reached a ROC-AUC metric of 0.9152.
+                        </p>
+
+                    </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>Next Hour Taxi Orders Prediction Model</h3>
+                        <a href="projects/taxi_orders_prediction.pdf" target="_blank">
+                            <img src="./images/TSA_project.png" class="img-fluid project-img" alt="Project 2">
+                        </a>
+                        <p>The data in this project was analyzed using Time Series Analysis (TSA) tools and lag features engineering to develop and test a machinge learning model for the regression task. 
+                            The best model (CatBoost) reached a RMSE metric of 41.43 which is below the minimum expected value of 48.
+                        </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>Convolutional neural network people's age detector</h3>
+                        <a href="https://github.com/Victor-Mier/people_age_detector/blob/main/People%20age%20detector.ipynb" target="_blank">
+                            <img src="./images/CV_age_detector.png" class="img-fluid project-img" alt="Project 3">
+                        </a>
+                        <p>Using a ResNet50 architecture for Convolutional Neural Networks (CNN), this project aimed to predict the age of a person using a face centered photo. 
+                            The model reached a Mean Absolute Error (MAE) of 5.48 which is a very good score for this type of projects.
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="text-center py-4">
+        <p>© 2025 Victor Mier | All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/victor-mier/" target="_blank" class="mx-2">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://github.com/Victor-Mier" target="_blank" class="mx-2">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="mailto:victor.mier.s@gmail.com" class="mx-2">
+                <i class="fas fa-envelope fa-2x"></i>
+            </a>
+        </div>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
